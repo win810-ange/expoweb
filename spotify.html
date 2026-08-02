@@ -10,7 +10,20 @@
 <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <!--rgb(48, 47, 47)-->
+<style>
+    .bar{
+        ::-webkit-scrollbar{
+            display: none;
+        }
+    }
+    
+  </style>
 <body class="bg-black">
+    <div class="bg-black">
+        <a href="index.html">
+            <img src="images/devant.svg" alt="">
+        </a>
+    </div>
     <header class="flex flex-col w-full min-h-[5rem] justify-center gap-2 lg:flex-row lg:gap-4">
             <section class="flex flex-row justify-center gap-4">
                 
@@ -37,7 +50,7 @@
             </section>
     </header>
     <main class="flex flex-col p-1">
-        <section class="bg-[#3d3d3d] rounded-[2%] p-2">
+        <section class="bg-[#3d3d3d] rounded-[2%] p-2 bar">
                 <h1 class="text-white font-[Poppins] text-lg">Artiste</h1>
                 <section class="flex flex-row overflow-x-scroll gap-4 overscroll-none">
                     <div class="flex flex-col px-4 py-6">
@@ -92,7 +105,7 @@
                     </div>
                 </section>
                 <h1 class="text-white font-[Poppins] text-lg">Album tendances</h1>
-                <section class="grid grid-cols-2 text-white gap-[0.25rem] m-3 md:grid-cols-3 lg:flex lg:flex-row lg:overflow-x-scroll lg:gap-6">
+                <section class="grid grid-cols-2 text-white gap-[0.25rem] m-3 md:grid-cols-3 lg:flex lg:flex-row lg:overflow-x-scroll lg:gap-6 bar">
                 <div class="flex flex-col">
                     <img src="images/artiste9.jpeg" height="150" width="150" alt="">
                     <h1>Chant 2</h1>

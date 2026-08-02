@@ -1,49 +1,121 @@
-<!doctype html>
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>formulaire</title>
-  <script src="https://cdn.tailwindcss.com"></script>
-</head>
-<body>
-    <div class="left-0 top-0 bg-black text-white w-full h-[2rem] align-center">
-        <a href="spotify.html">SUIVANT</a>
-    </div>
-  <section class="flex justify-between items-center m-20 p-4 flex-col lg:flex-row">
-    
-    <div class="w-1/2 h-full">
-        <img src="artiste1.jpeg" alt="" class="h-full w-full object-cover rounded-[50%] lg:rounded-[0%]">
-    </div>
-    <div class="w-1/2 flex justify-center items-center">
-        <form action="" class="w-[430px]">
-            <button class="bg-[#00378a] text-white lg:py-6 lg:px-8 rounded-lg text-3xl mb-5 py-2 px-3">
-                <p>M</p>
-            </button>
-            <h1 class="font-bold text-2xl">
-                Participer au concert
-            </h1>
-            <p class="text-md">Bienvenue Y-incubateur reserver votre place</p>
-            <div class="border-b-2 border-[blue] my-10"></div>
-
-            <div class="flex flex-col">
-                <label class="text-md mb-1 font-bold">Email</label>
-                <input type="email" placeholder="example@gmail.com" class="border-2 p-3 rounded-md text-sm outline-[#00378a]">
-            </div>
-            <div class="flex flex-col mt-10">
-                <label class="text-md mb-1 font-bold">Password</label>
-                <input type="password" placeholder="password" class="border-2 p-3 rounded-md text-sm outline-[#00378a]">
-            </div>
-
-            <button class="w-full bg-[#00378a] mt-10 text-sm rounded-md p-3">
-                sign up
-            </button>
-            <p class="text-center mt-4">
-                Already have an account ? <a href="#" class="text-[#00378a]">Log in</a>
-            </p>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>presentation</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="assets/static/main.j" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Google+Sans+Flex:opsz,wght@6..144,1..1000&family=Monsieur+La+Doulaise&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Mr+Dafoe&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <style>
+        /*.reveal{
+            transform: scale(1);
+            transition: transform 1s;
+            &:hover{
+                transform: scal(1.1);
+            }
+        }*/
+        @keyframes apparition {
+        0% {
+            opacity: 0;
+            transform: translateX(20rem);
             
-        </form>
-    </div>
-  </section>
+         } 40% {
+            opacity: 1;
+            transform: translate(0);
+         } 100%{
+
+         }
+
+    }
+
+        @keyframes boxbg {
+            0%{
+                background-color: #000000;
+                color: #ffffff;
+            } 30% {
+                background-color: #4e4d4d;
+                color: #ffffff;
+            } 60% {
+                background-color: #acacac;
+                color: #141414;
+            } 100% {
+                background-color: #ffffff;
+                color: #000000;
+            }
+        }
+
+        main{
+            animation: boxbg;
+            animation-timeline: scroll();
+        }
+        .boxanimation{
+        animation: apparition 1s;
+        animation-timeline: view();
+        animation-range: entry 10% cover;
+    }
+    </style>
+</head>
+<body class="font-[Poppins]">
+    <header class="w-full text-white bg-[#4355ff] text-white h-[2rem]">
+        <section class="flex flex-col">
+            <div class="flex flex-row justify-center text-white gap-3 text-base">
+                <div><a href="#" class="hover:font-bold">Presetention</a></div>
+                <div><a href="form.html" class="hover:font-bold">Exemple</a></div>
+                <div><a href="#" class="hover:font-bold">Ressources</a></div>
+            </div>
+        </section>
+    </header>
+    <section class="flex flex-col items-center bg-[#021bf8] text-white h-screen justify-center">
+            <div class="flex justify-center">
+                <h1 class="flex text-center text-4xl w-[20rem]">
+                    Obtenez un site web qui facilite votre communication !
+                </h1>
+            </div>
+            <div class="flex bg-[#fff] w-[10rem] text-black rounded-full justify-center align-center h-[4rem] p-3 m-3 hover:bg-black hover:text-white">
+                <a href="form.html" class="text-center font-bold">Exemples !</a>
+            </div>
+    </section>
+    <main class="flex flex-col items-center gap-12 p-6 mg-6 ">
+        <section class="border-[2px] justify-center align-center w-[30rem] min-h-[20rem] p-4 text-4xl text-center text-black boxanimation">
+           <p>
+             <div class="text-[#021bf8]">vous êtez entrepreneur</div> okapi code vous accompagne, afin de faciliter votre communication via <div class="text-[#021bf8]">la conception d'un site web de manière simple et excellente
+           </div>
+        </p> 
+        </section>  
+        <section class="w-[30rem] text-center border-2 text-3xl boxanimation">
+            <p class="text-4xl">
+                Notre ambition est de faciliter votre <div class="text-[#021bf8]">communication</div> , vous offrant une <div class="text-[#021bf8]" >webpage</div> qui reponds à vos attentes
+            </p>
+        </section>
+        <section class="w-[30Rem] border-2 p-4 boxanimation">
+            <h2 class="text-center text-2xl">Voici une liste des projets déjà accompli</h2>
+            <ul class="list-disc ml-3">
+                <li><a href="form.html">Formulaire</a></li>
+                <li><a href="spotify.html">plateforme streaming</a></li>
+                <li><a href="index.html">Portfolio</a></li>
+            </ul>
+        </section>
+        <section class="w-[30rem] items-center border-2 p-3 text-3xl boxanimation">
+            <p class="text-left">
+                <div class="text-[#021bf8]">Faites nous </div>confiances pour la suite
+            </p>
+        </section>      
+    </main>
+
+    <footer class="flex w-full bg-black text-white flex-col items-center gap-4 p-3 lg:grid lg:grid-cols-2">
+        <div class="flex flex-col gap-4">
+            <a href="">Projet</a>
+            <a href="">Contacter</a>
+            <a href="">Whatsapp</a>
+        </div>
+        <div class="flex flex-col gap-4">
+            <a href="">Facebook</a>
+            <a href="">A propos</a>
+        </div>
+        
+    </footer>
 </body>
 </html>
